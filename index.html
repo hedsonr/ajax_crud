@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Cadastro de Produtos</title>
+ 
+    <!-- bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+    <!-- custom CSS -->
+    <link href="app/assets/css/style.css" rel="stylesheet" />
+    
+ 
+</head>
+<body>
+ 
+<!-- our app will be injected here -->
+<div id="app"></div>
+ 
+<div class="rodape"><p>Material baseado em <a href="https://codeofaninja.com/2015/06/php-crud-with-ajax-and-oop.html">CodeOfANinja</a></p></div>
+<!-- jQuery library -->
+<script src="app/assets/js/jquery-3.5.1.min.js"></script>
+ 
+<!-- bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+<!-- bootbox for confirm pop up -->
+<script src="app/assets/js/bootbox.min.js"></script>
+
+<!-- apontamento para a API -->
+<script type="text/javascript">
+    
+    // Real
+    var baseAPIURI_read = "http://localhost/rest_api/product/read";
+    var baseAPIURI_readOne = "http://localhost/rest_api/product/read_one.php?id=";
+    var baseAPIURI_create = "http://localhost/rest_api/product/create";
+    var baseAPIURI_update = "http://localhost/rest_api/product/update";
+    var baseAPIURI_delete = "http://localhost/rest_api/product/delete";
+    var baseAPIURI_category = "http://localhost/rest_api/category/read";
+
+    // 
+
+    /* * Mockup 
+
+    var baseAPIURI_read = "https://5f9c4734856f4c00168c83c3.mockapi.io/api/records";
+    var baseAPIURI_readOne = "https://5f9c4734856f4c00168c83c3.mockapi.io/api/records/";
+    var baseAPIURI_create = "https://5f9c4734856f4c00168c83c3.mockapi.io/api/records";
+    var baseAPIURI_update = "https://5f9c4734856f4c00168c83c3.mockapi.io/api/records";
+    var baseAPIURI_delete = "https://5f9c4734856f4c00168c83c3.mockapi.io/api/records/";
+
+    // */
+</script>>
+
+
+<!-- app js script -->
+<script src="app/app.js"></script>
+ 
+<!-- products scripts -->
+
+<script src="app/products/read-products.js"></script>
+<script src="app/products/create-product.js"></script>
+<script src="app/products/read-one-product.js"></script>
+<script src="app/products/update-product.js"></script>
+<script src="app/products/delete-product.js"></script>
+ 
+</body>
+</html>
